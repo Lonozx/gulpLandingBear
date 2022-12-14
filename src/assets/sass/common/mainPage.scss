@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s all ease-in-out;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background: #7C4032;
+}
+
+.hero-logo {
+    width: 545px;
+    height: 537px;
+    min-width: 545px;
+}
+
+.header {
+    background-image: url('../img/mask-bg.png');
+    
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    padding: 181px 352px;
+    overflow-x: hidden;
+    &__header {
+
+        display: flex;
+        justify-content: center;
+        gap: 99px;
+        background: #FEF4DE;
+
+        &-title {
+            padding: 140px 0;
+            width: 50%;
+            &-but {
+                padding: 30px 0;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__services-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 50px 0;
+
+        &-item {
+            width: 288px;
+            height: 269px;
+            border: 1px black solid;
+            border-radius: 20px;
+            background: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__review {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 50px 0;
+        flex-wrap: wrap;
+        &-item {
+            width: 512px;
+            min-width: 512px;
+            height: 192px;
+            background: #FFFFFF;
+            border: 1px solid #7C4032;
+            border-radius: 30px;
+            padding: 20px 50px;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 18px;
+        gap: 70px;
+        &-form {
+            display: flex;
+            gap: 20px;
+            justify-content: center;}
+            &-data {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                &-item {
+                    display: flex;
+                    gap: 20px;}
+            }
+            
+    }
+
+    &:nth-child(2n) {
+        background: #FEF4DE;
+    }
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-field {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 61px;
+    padding: 10px;
+    background: #E5AF99;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 115px;
+    line-height: 136px;
+    color: #663128;
+}
+
+.sub-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 136px;
+    color: #663128;
+
+    &--white {
+        color: white;
+    }
+}
+
+.star {
+    width: 18px;
+    height: 18px;
+    &-rated{
+        display: flex;
+        gap: 6px;
+    }
+}
+
+.text-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #663128;
+    max-width: 552px;
+}
+
+.username {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7C4032;
+
+    &-review {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+    }
+}
+
+.button-help {
+    align-self: center;
+    width: 210px;
+    height: 66px;
+    color: #663128;
+    background: #F3CE5E;
+    border: none;
+    border-radius: 57px;
+
+    &:hover {
+        box-shadow: 0px 20px 40px rgba(243, 206, 94, 0.2);
+    }
+}
+
+.button-contact {
+    width: 150px;
+    height: 50px;
+    background: white;
+    color: #55352D;
+    border: 1px #55352D solid;
+    border-radius: 61px;
+}
+
+.section-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background: white;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
