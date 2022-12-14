@@ -1,0 +1,43 @@
+// Poppins font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+// font-family: 'Poppins', sans-serif;
+
+$main-font:'Poppins', sans-serif;
+
+.h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 115px;
+    line-height: 118.5%;
+    
+    /* or 136px */
+}
+
+.h2{
+    font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 90px;
+line-height: 118.5%;
+
+/* or 136px */
+}
+
+.h3{
+    
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+}
+
+.titles{
+    font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 96px;
+}
