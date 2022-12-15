@@ -22,6 +22,12 @@ a{
     width: 545px;
     height: 537px;
     min-width: 545px;
+    @media (max-width:$mobile-device) {
+        order: 1;
+        width: 350px;
+        height: 350px;
+        min-width: 350px;
+    }
 }
 
 .h1{
@@ -72,16 +78,35 @@ line-height: 96px;
 .container {
     padding: 181px 352px;
     overflow-x: hidden;
+    
+    @media (max-width:$mobile-device) {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    &__hero{
+        display: flex;
+    }
     &__header {
 
         display: flex;
         justify-content: center;
         gap: 99px;
         background: #FEF4DE;
-
+        @media (max-width:$mobile-device) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
         &-title {
             padding: 140px 0;
-            width: 50%;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            @media (max-width:$mobile-device) {
+                order: 2;
+                width: 100vw;
+            }
             &-but {
                 padding: 30px 0;
                 display: flex;
@@ -104,7 +129,7 @@ line-height: 96px;
         align-items: center;
         gap: 16px;
         padding: 50px 0;
-
+        
         &-item {
             width: 288px;
             height: 269px;
@@ -115,6 +140,7 @@ line-height: 96px;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+           
         }
     }
 
@@ -127,7 +153,6 @@ line-height: 96px;
         &-item {
             width: 512px;
             min-width: 512px;
-            height: 192px;
             background: #FFFFFF;
             border: 1px solid #7C4032;
             border-radius: 30px;
@@ -135,6 +160,10 @@ line-height: 96px;
             gap: 10px;
             display: flex;
             flex-direction: column;
+            @media (max-width:$mobile-device) {
+                width: 350px;
+            min-width: 350px;
+            }
         }
     }
     &__contact {
@@ -142,6 +171,10 @@ line-height: 96px;
         justify-content: space-between;
         border-radius: 18px;
         gap: 70px;
+        @media (max-width:$mobile-device) {
+            gap: 20px;
+            flex-direction: column;;
+        }
         &-form {
             display: flex;
             gap: 20px;
@@ -199,6 +232,10 @@ line-height: 96px;
 
     &--white {
         color: white;
+    }
+    @media (max-width:$mobile-device) {
+        font-size: 45px;
+        padding: 10px;
     }
 }
 
